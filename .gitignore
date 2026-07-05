@@ -15,7 +15,7 @@ dist
 dist-ssr
 
 # Firebase service account key (contains sensitive credentials)
-server/*firebase-adminsdk*.json
+*firebase-adminsdk*.json
 
 # Environment files
 .env

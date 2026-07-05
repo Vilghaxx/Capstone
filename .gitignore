@@ -9,7 +9,7 @@ lerna-debug.log*
 
 # Dependencies
 node_modules
-
+docs/superpowers
 # Build output
 dist
 dist-ssr

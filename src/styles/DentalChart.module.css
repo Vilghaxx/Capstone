@@ -1,0 +1,75 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.legend {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: #666;
+}
+
+.legendColor {
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+}
+
+.chart {
+  width: 100%;
+  max-width: 500px;
+  background: #f8fafc;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.quadrantLabel {
+  font-size: 6px;
+  fill: #94a3b8;
+  text-anchor: middle;
+  font-weight: 500;
+}
+
+.divider {
+  stroke: #e2e8f0;
+  stroke-width: 1;
+  stroke-dasharray: 4;
+}
+
+.tooth {
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+.tooth:hover {
+  transform: scale(1.1);
+}
+
+.tooth.selected rect {
+  stroke-width: 2;
+}
+
+.toothNumber {
+  font-size: 5px;
+  font-weight: 600;
+  pointer-events: none;
+}
+
+.tooltip {
+  pointer-events: none;
+}
+
+.tooltipText {
+  font-size: 5px;
+}

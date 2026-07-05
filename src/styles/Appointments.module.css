@@ -1,0 +1,512 @@
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.addBtn {
+  padding: 10px 20px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.addBtn:hover {
+  background: #5568d3;
+}
+
+.formCard {
+  background: #f8fafc;
+  padding: 24px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+
+.formCard h2 {
+  margin: 0 0 16px;
+  font-size: 18px;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.formGroup label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #555;
+}
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.formGroup input:focus,
+.formGroup select:focus,
+.formGroup textarea:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.formActions {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.cancelBtn {
+  padding: 10px 20px;
+  background: #f5f5f5;
+  color: #666;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.submitBtn {
+  padding: 10px 20px;
+  background: #22c55e;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.loading, .empty {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.dayGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.dateHeader {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #666;
+  text-transform: uppercase;
+}
+
+.appointmentCard {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  align-items: center;
+}
+
+.appointmentTime {
+  min-width: 60px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.appointmentDetails {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.patientName {
+  font-weight: 600;
+  color: #333;
+}
+
+.appointmentType {
+  font-size: 13px;
+  color: #666;
+  text-transform: capitalize;
+}
+
+.notes {
+  margin: 4px 0 0;
+  font-size: 13px;
+  color: #666;
+}
+
+.appointmentActions {
+  display: flex;
+  gap: 8px;
+}
+
+.statusSelect {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.statusSelect.scheduled {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.statusSelect.completed {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.statusSelect.cancelled {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.statusSelect.no-show {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.statusSelect.pending {
+  background: #e0e7ff;
+  color: #4338ca;
+}
+
+.deleteBtn {
+  padding: 6px 10px;
+  background: #fee2e2;
+  color: #dc2626;
+  border: none;
+  border-radius: 6px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.deleteBtn:hover {
+  background: #fecaca;
+}
+
+.approveBtn {
+  padding: 6px 14px;
+  background: #22c55e;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.approveBtn:hover {
+  background: #16a34a;
+}
+
+.declineBtn {
+  padding: 6px 14px;
+  background: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.declineBtn:hover {
+  background: #dc2626;
+}
+
+.requestsBanner {
+  background: #e0e7ff;
+  border: 1px solid #a5b4fc;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  color: #4338ca;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.requestsCard {
+  background: #fafaff;
+  border: 1px solid #c7d2fe;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.requestsCard .appointmentTime {
+  color: #4338ca;
+}
+
+.requestsActions {
+  display: flex;
+  gap: 8px;
+}
+
+.approveForm {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: end;
+  padding: 12px 0 0;
+  border-top: 1px solid #e0e7ff;
+  margin-top: 8px;
+  width: 100%;
+}
+
+.approveFormField {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 12px;
+  color: #555;
+}
+
+.approveFormField label {
+  font-weight: 500;
+  font-size: 11px;
+  color: #666;
+}
+
+.approveFormField input,
+.approveFormField select,
+.approveFormField textarea {
+  padding: 6px 8px;
+  border: 1px solid #c7d2fe;
+  border-radius: 4px;
+  font-size: 12px;
+  font-family: inherit;
+  background: white;
+}
+
+.approveFormField input:focus,
+.approveFormField select:focus,
+.approveFormField textarea:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.approveFormActions {
+  display: flex;
+  gap: 6px;
+  align-items: end;
+  padding-bottom: 2px;
+}
+
+.confirmBtn {
+  padding: 6px 14px;
+  background: #22c55e;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.confirmBtn:hover {
+  background: #16a34a;
+}
+
+.confirmBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+.headerActions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.viewToggle {
+  display: flex;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.toggleBtn {
+  padding: 8px 16px;
+  border: none;
+  background: white;
+  color: #666;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.toggleBtn:not(:last-child) {
+  border-right: 1px solid #ddd;
+}
+
+.toggleActive {
+  background: #667eea;
+  color: white;
+}
+
+.span2 {
+  grid-column: span 2;
+}
+
+.scheduleView {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.scheduleHeader {
+  padding: 16px;
+  border-bottom: 1px solid #e5e7eb;
+  background: #f9fafb;
+}
+
+.dateInput {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.dateInput:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.timeGrid {
+  display: flex;
+  flex-direction: column;
+}
+
+.timeSlot {
+  display: flex;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.timeSlot:last-child {
+  border-bottom: none;
+}
+
+.slotLabel {
+  width: 60px;
+  padding: 10px 12px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #888;
+  border-right: 1px solid #f0f0f0;
+  flex-shrink: 0;
+}
+
+.slotContent {
+  flex: 1;
+  min-height: 44px;
+  padding: 4px 8px;
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.slotEmpty {
+  color: #ccc;
+  font-size: 13px;
+  padding: 4px;
+}
+
+.slotAppointment {
+  background: #dbeafe;
+  border-radius: 6px;
+  padding: 6px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 140px;
+}
+
+.slot_scheduled {
+  background: #dbeafe;
+}
+
+.slot_completed {
+  background: #dcfce7;
+}
+
+.slot_cancelled {
+  background: #fee2e2;
+}
+
+.slot_no-show {
+  background: #fef3c7;
+}
+
+.slot_pending {
+  background: #e0e7ff;
+}
+
+.slotPatient {
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
+}
+
+.slotType {
+  font-size: 11px;
+  color: #666;
+  text-transform: capitalize;
+}
+
+.slotStatus {
+  margin-top: 4px;
+  padding: 2px 6px;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  color: inherit;
+}
